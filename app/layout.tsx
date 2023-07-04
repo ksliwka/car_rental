@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import NavbarCompononet from "../components/Navbar";
 import "./globals.css";
-
 export const metadata = {
   title: "Car Rental",
   description: "Find the best cars",
@@ -15,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative">
-        <Navbar />
-        {children}
-        <Footer />
+          <NavbarCompononet />
+          {children}
+          <Footer />
       </body>
     </html>
   );

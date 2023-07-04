@@ -1,9 +1,26 @@
-import React from 'react'
+"use client";
 
-const Navbar = () => {
+import Link from "next/link";
+import CustomButton from "./CustomButton";
+import classes from "./Navbar.module.css";
+import { Nav, Navbar } from "react-bootstrap";
+
+import { Container } from "react-bootstrap";
+
+const NavbarCompononet = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <Container >
+      <Navbar expand="lg">
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Link href="/" className={classes.navbar__title}>
+            <h2>Car Rental</h2>
+          </Link>
+          <Navbar.Collapse className="justify-content-end">
+            <CustomButton title="Sign in" btnType="button" containerStyles="" />
+          </Navbar.Collapse>
+      </Navbar>
+    </Container>
+  );
+};
 
-export default Navbar
+export default NavbarCompononet;

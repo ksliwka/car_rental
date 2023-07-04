@@ -1,0 +1,13 @@
+.footer h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #aba9bb;
+}
+
+.footer__link {
+  text-decoration: none;
+}

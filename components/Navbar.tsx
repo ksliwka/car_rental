@@ -3,14 +3,14 @@
 import Link from "next/link";
 import CustomButton from "./CustomButton";
 import classes from "./Navbar.module.css";
-import { Nav, Navbar } from "react-bootstrap";
+import {  Navbar } from "react-bootstrap";
 
 import { Container } from "react-bootstrap";
 
 const NavbarCompononet = () => {
   return (
     <Container >
-      <Navbar expand="lg">
+      <Navbar expand="lg" className="mt-3">
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Link href="/" className={classes.navbar__title}>
             <h2>Car Rental</h2>
